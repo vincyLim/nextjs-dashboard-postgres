@@ -8,6 +8,12 @@ export const metadata: Metadata = {
 };
 
 export default function LoginPage() {
+    // For debugging purposes
+    console.log('🌍 Environment check on login page:');
+    console.log('   AUTH_URL:', process.env.AUTH_URL);
+    console.log('   NEXTAUTH_URL:', process.env.NEXTAUTH_URL);
+    console.log('   NODE_ENV:', process.env.NODE_ENV);
+    console.log('   VERCEL_URL:', process.env.VERCEL_URL);
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
